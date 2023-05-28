@@ -33,13 +33,8 @@ function App() {
         setMenuOpen(false);
     };
 
-    const handleDarkModeClick = () => {
-        setDarkMode(!isDarkMode);
-    };
-
-
   return (
-    <div className={isDarkMode ? "dark": ""}>
+    <div>
       <header>
       <a href="#" class="logo">
           <img src="./images/pizza-1-01-removebg-preview.png" />
@@ -57,13 +52,9 @@ function App() {
               <a href="#"><i className='bx bx-bell' ></i></a>
               <a href="#"><i className='bx bx-cart' ></i></a>
               <div className="bx bx-menu" id="menu-icon"></div>
-              <div 
-              className={isDarkMode ? 'bx bx-sun' : 'bx bx-moon'} id="darkmode"
-              onClick={handleDarkModeClick}
-              ></div>
           </div>
       </header>
-      <section className="home" id="home">
+      <section className="home" id="home" >
           <div className="home-text">
               <h1>Order Your <br /> Favourite Meal.</h1>
               <p>we promise you will enjoy every sweet moment to find your favourite.Eat
