@@ -12,7 +12,7 @@ function App() {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch('http://localhost:3008/products');
+            const response = await fetch('https://gold-uninterested-calf.cyclic.app/products');
             const jsonData = await response.json();
             setProducts(jsonData);
           } catch (error) {
