@@ -4,10 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 
 function App() {
     const [isMenuOpen, setMenuOpen] = useState(false);
-    const [isDarkMode, setDarkMode] = useState(false);
     const [products, setProducts] = useState([]);
-    const menuRef = useRef(null);
-    const navbarRef = useRef(null);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -22,16 +19,6 @@ function App() {
     
         fetchData();
       }, []);
-    
-    
-
-    const handleMenuClick = () => {
-        setMenuOpen(!isMenuOpen);
-    };
-
-    const handleScroll = () => {
-        setMenuOpen(false);
-    };
 
   return (
     <div>
